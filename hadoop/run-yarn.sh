@@ -1,7 +1,7 @@
 #!/bin/sh
 
 __NETWORK=hadoop_net
-__IMAGE=hadoop-pseudo
+__IMAGE=hadoop-base
 __CONTAINER=yarn
 __COMMAND="./start-yarn.sh"
 __HOST=yarn

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 __NETWORK=hadoop_net
-__IMAGE=hadoop-pseudo
+__IMAGE=hadoop-base
 __CONTAINER=hdfs-command
 
 # DO NOT REMOVE the container or you'll LOOSE all the data

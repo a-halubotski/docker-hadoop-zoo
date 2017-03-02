@@ -1,7 +1,7 @@
 #!/bin/bash
 
 __NETWORK=hadoop_net
-__IMAGE=hadoop-pseudo
+__IMAGE=hadoop-base
 __CONTAINER=hdfs-name
 __COMMAND="./start-namenode.sh"
 __VOL_BASE=/workspace/docker/containers/hadoop

@@ -1,4 +1,4 @@
-FROM hadoop-pseudo
+FROM hadoop-base
 
 MAINTAINER Andrew
 

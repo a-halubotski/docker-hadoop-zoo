@@ -7,7 +7,7 @@ if [ "$__NUM" = "" ]; then
 fi
 
 __NETWORK=hadoop_net
-__IMAGE=hadoop-pseudo
+__IMAGE=hadoop-base
 __CONTAINER=hdfs-data-$__NUM
 __COMMAND="bin/hdfs datanode"
 __VOLUME=/workspace/docker/containers/hadoop/dfs/data-$__NUM
