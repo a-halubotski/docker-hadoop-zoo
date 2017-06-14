@@ -6,6 +6,8 @@ ENV HADOOP_HOME /opt/hadoop
 ENV HADOOP_LOG_DIR /app/hadoop/log
 ENV HADOOP_TMP_DIR /app/hadoop/tmp
 ENV HADOOP_OPTS -Djava.net.preferIPv4Stack=true
+ENV HADOOP_CONF_DIR /opt/hadoop/etc/hadoop
+ENV YARN_CONF_DIR /opt/hadoop/etc/hadoop
 
 ENV HADOOP_DFS_NAME=/app/hadoop/dfs/name
 ENV HADOOP_DFS_NAMESECONDARY=/app/hadoop/dfs/namesecondary

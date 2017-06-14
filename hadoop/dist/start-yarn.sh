@@ -1,3 +1,4 @@
 #!/bin/bash
-bin/yarn resourcemanager&
+bin/yarn-daemon.sh start historyserver
+bin/yarn-daemon.sh start resourcemanager
 bin/yarn nodemanager

@@ -26,6 +26,10 @@
  		<value>org.apache.hadoop.mapred.ShuffleHandler</value>
 	</property>
 	<property>
+    	<name>yarn.resourcemanager.scheduler.class</name>
+		<value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler</value>
+	</property> 
+	<property>
 		<name>yarn.resourcemanager.hostname</name>
 		<value>yarn</value>
 	</property>
@@ -33,4 +37,41 @@
  		<name>yarn.nodemanager.hostname</name>
  		<value>yarn</value>
 	</property>
+	<property>
+    	<name>yarn.nodemanager.resource.memory-mb</name>
+    	<value>6144</value>
+	</property>
+
+
+	<property>
+  		<name>yarn.timeline-service.address</name>
+  		<value>yarn:10020</value>
+	</property>
+	<property>
+  		<description>The hostname of the Timeline service web application.</description>
+  		<name>yarn.timeline-service.hostname</name>
+  		<value>yarn0</value>
+	</property>
+	<property>
+  		<description>The http address of the Timeline service web application.</description>
+  		<name>yarn.timeline-service.webapp.address</name>
+  		<value>yarn:8188</value>
+	</property>
+
+	<property>
+  		<description>Indicate to ResourceManager as well as clients whether
+		  history-service is enabled or not. If enabled, ResourceManager starts
+		  recording historical data that Timelien service can consume. Similarly,
+		  clients can redirect to the history service when applications
+		  finish if this is enabled.</description>
+	    <name>yarn.timeline-service.generic-application-history.enabled</name>
+		<value>true</value>
+	</property>
+	<property>
+  		<description>Store class name for history store, defaulting to file system
+		  store</description>
+	  	<name>yarn.timeline-service.generic-application-history.store-class</name>
+	  	<value>org.apache.hadoop.yarn.server.applicationhistoryservice.FileSystemApplicationHistoryStore</value>
+	</property>
+
 </configuration>
